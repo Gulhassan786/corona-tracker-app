@@ -33,10 +33,10 @@ jobs:
           cmd: install # installing yarn
 
       - name: creating a build
-        run: npm run-script build
+        run: yarn build
 
       - name: Installing surge
-        run: yarn build
+        run: npm install -g surge
 
       - name: deploying on surge
         run: surge --project ./build --domain http://tracker_corona_virus.surge.sh/ --token ${{secrets.CORONA}}

@@ -31,7 +31,7 @@ function Chart({data:{confirmed , recovered ,deaths}}) {
  
 
     return <div>
-        <Grid xs ={12} xm = {12} >
+        <Grid style={{width:'100%' , height:530 , marginTop:10}} >
             <Grid item xs = {12} xm = {12} >
            { Barchart}
             </Grid>

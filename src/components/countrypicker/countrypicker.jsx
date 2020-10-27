@@ -17,18 +17,17 @@ let classes = useStyles();
 
     // console.log(Object.values(countrynames).map((countrytitle, i) => <option key={i} value={countrytitle} > {countrytitle.title}</option>))
 
-    const [countryname, setcountryname] = useState({})
+    const [countrynames, setcountrynames] = useState({})
     
     useEffect ( () => {
         async function countries() {
              const nameresponse = await fetch("https://api.thevirustracker.com/free-api?countryTotals=ALL")
             const countryINjson = await nameresponse.json();
-            setcountryname(countryINjson && countryINjson.countryitems && countryINjson.countryitems[0] && countryINjson.countryitems[0] && countryINjson.countryitems[0])
+            setcountrynames(countryINjson && countryINjson.countryitems && countryINjson.countryitems[0] && countryINjson.countryitems[0] && countryINjson.countryitems[0])
         }
         countries();
-    },[!countryname])
-    const [countrynames, setcountrynames] = useState({})
-    setcountrynames(countryname);
+    },[!countrynames])
+
 function changeFunc(names) { 
     handlecountrychange(names)
 }

@@ -10,11 +10,12 @@ const useStyles = makeStyles((theme) => ({
        width: '100%',
     },
     paper: {
-        padding: theme.spacing(4.5),
+        padding: theme.spacing(3.5),
         textAlign: "center",
         color: theme.palette.text.secondary,
         marginBottom: 15 ,
         textDecoration: 'none',
+        height: 120,
        
         '&:hover': {
             textDecoration: 'box',
