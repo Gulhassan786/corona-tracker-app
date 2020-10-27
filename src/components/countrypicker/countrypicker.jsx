@@ -18,6 +18,7 @@ let classes = useStyles();
     // console.log(Object.values(countrynames).map((countrytitle, i) => <option key={i} value={countrytitle} > {countrytitle.title}</option>))
 
     const [countrynames, setcountrynames] = useState({})
+    
     useEffect ( () => {
         async function countries() {
              const nameresponse = await fetch("https://api.thevirustracker.com/free-api?countryTotals=ALL")

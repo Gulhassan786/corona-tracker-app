@@ -87,9 +87,9 @@ function App() {
           <Paper elevation={8} className={classes.paper} style={{ width: "100%", height: 550, backgroundColor: "beige" }} >
 
               <Countrypicker />
-              <Grid item xs={12} xm ={12} sm ={12} style={{width:"100%" , height:1000}}>
+          <Paper>
               <Chart data = {data} />
-                </Grid>
+           </Paper>
           </Paper>
         </Grid> 
         </Grid>
