@@ -36,7 +36,7 @@ jobs:
         run: npm run-script build
 
       - name: Installing surge
-        run: npm install -g surge
+        run: yarn build
 
       - name: deploying on surge
         run: surge --project ./build --domain http://tracker_corona_virus.surge.sh/ --token ${{secrets.CORONA}}
