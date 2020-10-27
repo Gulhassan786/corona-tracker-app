@@ -32,7 +32,7 @@ jobs:
         with:
           cmd: install # installing yarn
       - name: npm test:ci
-        run: npm run test:ci
+        run: npm run test
         env:
            CI: false
          
