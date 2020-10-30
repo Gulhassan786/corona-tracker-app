@@ -76,7 +76,7 @@ function App() {
             <Grid item xs={12} style={{ marginTop: 10, marginLeft: 10, width: '97%', paddingRight: 0 }} >
               <Paper elevation={6} style={{ fontWeight: "normal", color: "black", backgroundColor: "rgba(25,200,200,0.5)", width: "99%", height: 100, padding: 20, paddingLeft: 10, marginBottom: 10, textAlign: "center" }}>
                 <Typography variant="h6" className={classes.hover}>
-                  Please follow the SOP`s to protect your selves and the whole world from COVIDE-19 pandemic request by Gul Hassan
+                  Please follow the SOP`s to protect your selves , your family and the whole world from COVIDE-19 pandemic request by Gul Hassan
                      </Typography>
               </Paper >
             </Grid>
