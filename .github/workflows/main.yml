@@ -38,6 +38,7 @@ jobs:
  
       - name: Installing surge
         run: npm install -g surge
-
+        env:
+          CI: "" 
       - name: deploying on surge
         run: surge --project ./build --domain http://tracker_corona_virus.surge.sh/ --token ${{secrets.CORONA}}
