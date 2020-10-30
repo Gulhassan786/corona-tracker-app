@@ -31,16 +31,14 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install # installing yarn
-      - name: yarn run-script test:ci
-        run: yarn test:ci
-        env:
-           CI: ""
-         
-      - name: creating a build
-        run: yarn build
- 
+
       - name: Installing surge
         run: npm install -g surge
+         
+      - name: creating a build
+        run: npm run build
+        env:
+          CI: ""
         
       - name: deploying on surge
         run: surge --project ./build --domain http://tracker_corona_virus.surge.sh/ --token ${{secrets.CORONA}}
