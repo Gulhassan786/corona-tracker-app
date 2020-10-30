@@ -31,10 +31,7 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install # installing yarn
-      - name: npm test:ci
-        run: npm run test
-        env:
-           CI: false
+
          
       - name: creating a build
         run: yarn build
