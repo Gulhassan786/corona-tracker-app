@@ -31,10 +31,10 @@ jobs:
         uses: Borales/actions-yarn@v2.3.0
         with:
           cmd: install # installing yarn
-      - name: Dump GitHub env object
+      - name: npm test:ci
+        run: npm run test:ci
         env:
-          ENV_CONTEXT: ${{ toJson(env) }}
-        run: echo "$ENV_CONTEXT"
+           CI: false
          
       - name: creating a build
         run: yarn build
